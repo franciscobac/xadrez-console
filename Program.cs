@@ -3,13 +3,13 @@ using tabuleiro;
 
 namespace xadrez_console
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Tabuleiro tab = new Tabuleiro(3, 4);
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
-            Console.WriteLine(tab);
+            Tela.imprimirTabuleiro(tab);
         }
     }
 }
