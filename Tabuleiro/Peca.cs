@@ -22,7 +22,7 @@
             {
                 for (int j = 0; j < tab.colunas; j++)
                 {
-                    if (mat[i,j] )
+                    if (mat[i, j])
                     {
                         return true;
                     }
@@ -36,12 +36,17 @@
             return movimentosPossiveis()[pos.linha, pos.coluna];
         }
 
+        public bool movimentoPossivel(Posicao pos)
+        {
+            return movimentosPossiveis()[pos.linha, pos.coluna];
+        }
+
         public abstract bool[,] movimentosPossiveis();
 
 
         public void incrementarQtdMovimentos()
         {
-            qteMovimentos ++;
+            qteMovimentos++;
         }
 
         public void decrementarQtdMovimentos()
